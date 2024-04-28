@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+  }
+  
+  /* navbar */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dbdbdb;
+    padding: 0 40px;
+  }
+  
+  nav .kiri ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .kiri ul img {
+    margin-right: 50;
+  }
+  
+  nav .kiri ul li {
+    list-style-type: none;
+    margin-right: 30px;
+  }
+  
+  nav .kiri ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav .kiri ul .active a {
+    color: orangered;
+    font-weight: bold;
+  }
+  
+  nav .kanan a {
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .h1 {
+    text-align: center;
+  }
+  
+  form {
+    width: 350px;
+    margin: 50px auto;
+  }
+  
+  form div {
+    margin-top: 10px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 328px;
+    margin-top: 5px;
+    border: 1px solid #dbdbdb;
+    background-color: #dbe4c6;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+  }
+  
+  select {
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #dbdbdb;
+    background-color: #dbe4c6;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  form div button {
+    background-color: black;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 250px;
+    cursor: pointer;
+  }
+  

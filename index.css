@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+  }
+  
+  /* navbar */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dbdbdb;
+    padding: 0 40px;
+    border-bottom: 2px solid orangered;
+  }
+
+  ul {
+    padding: 0px;
+  }
+  
+  nav .kiri li {
+   margin-left: 40px;
+   list-style-type: none;
+   margin-right: 1px;
+   display: flex;
+
+
+  }
+
+  nav .kiri ul {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+  
+  nav .kiri ul img {
+    margin-right: 50;
+  }
+
+  
+  nav .kiri ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav .kiri ul .active a {
+    color: orangered;
+    font-weight: bold;
+  }
+  
+  nav .kanan a {
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  nav .kanan i {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .contactbtn {
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .contactbtn a {
+    color: white;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 800px) {
+    nav .kiri {
+        display: none;
+      }
+
+    nav .kanan a {
+      display: none;
+    }
+
+    nav .kanan i {
+      display: block;
+    }
+
+    .hidden {
+      display: block;
+    }
+
+  
+  }
+  
+
+  

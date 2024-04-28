@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    background-color: white;
+  }
+  
+  /* navbar */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dbdbdb;
+    padding: 0 40px;
+    border-bottom: 2px solid orangered;
+  }
+  
+  nav .kiri ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .kiri ul img {
+    margin-right: 50;
+  }
+  
+  nav .kiri ul li {
+    list-style-type: none;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  nav .kiri ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav .kiri ul .active a {
+    color: orangered;
+    font-weight: bold;
+  }
+  
+  nav .kanan a {
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  nav .kanan i {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  div h1 {
+    text-align: center;
+  }
+
+  form {
+    width: 350px;
+    margin: 50px auto;
+  }
+
+  form div {
+    margin-top: 10px;
+  }
+
+  input, textarea {
+    width: 328px;
+    margin-top: 5px;
+    border: 1px solid #dbdbdb;
+    background-color: #dbe4c6;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+  }
+
+  .date input {
+    width: 148px;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: black;
+    padding: 7px 30px 7px 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    nav .kiri {
+        display: none;
+      }
+
+    nav .kanan a {
+      display: none;
+    }
+
+    nav .kanan i {
+      display: block;
+    }
+
+    .hidden {
+      display: block;
+    }
+
+  
+  }
+

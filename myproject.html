@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 6</title>
+        <link rel="stylesheet" href="myproject.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav>
+            <img src="logo1.png" style="width: 65px;">
+            <div class="kiri" style="flex: 1;">
+                <ul>
+                    <li class="active">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">My Project</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+            <div id="menu-icon" class="kanan">
+                <i class="fa-solid fa-bars fa-2x" style="cursor: pointer;"></i>
+                <a href="contactme.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <div class="hidden">
+            <ul id="menu-list" class="tablet" style="text-align: center; background-color: grey; font-size: 20px; margin-top: 1px; margin-left: -100px;">
+                <li style="border: 1px solid whitesmoke; padding-top: 20px; padding-bottom: 15px;"> <a href="index.html" style="text-decoration: none; color: black; font-weight: bold;">Home</a></li>
+                <li style="border: 1px solid whitesmoke; padding-top: 20px; padding-bottom: 15px;"><a href="myproject.html" style="text-decoration: none; color: black; font-weight: bold;">My Project</a></li>  
+                <li style="border: 1px solid whitesmoke; padding-bottom: 15px;"> <button class="contactbtn"><a href="contactme.html" style="font-size: 20px; color: white; text-decoration: none;">Contact Me</a></li></button>  
+            </ul>
+        </div>
+      
+
+        <div id="formApp">
+            <h1 style="text-align: center;">ADD MY PROJECT</h1>
+                <form>
+                    <div>
+                        <label for="projectname" style="font-weight: bold;">Project Name</label>
+                        <input type="text" id="projectname" required placeholder="Project Name">
+                    </div>
+
+                    <div style="display: flex;" class="date">
+                        <div>
+                            <label for="startdate" style="font-weight: bold;">Start Date</label>
+                            <input type="date" id="startdate" required placeholder="startdate">
+                        </div>
+
+                        <div>
+                            <label for="enddate" style="font-weight: bold;">End Date</label>
+                            <input type="date" id="enddate" required placeholder="enddate">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="description" style="font-weight: bold;">Description</label>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="Technologies" style="font-weight: bold;">Technologies</label>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: auto auto;">
+                            <div style="display: flex;">
+                                <input type="checkbox" name="nodejs" id="nodejs" style="width: auto;">
+                                <label for="nodejs">Node Js</label>
+                            </div>
+                            <div style="display: flex;">
+                                <input type="checkbox" name="reactjs" id="reactjs" style="width: auto;">
+                                <label for="reactjs">React Js</label>
+                            </div>
+                            <div style="display: flex;">
+                                <input type="checkbox" name="nextjs" id="nextjs" style="width: auto;">
+                                <label for="nextjs">Next Js</label>
+                            </div>
+                            <div style="display: flex;">
+                                <input type="checkbox" name="typescrip" id="typescrip" style="width: auto;">
+                                <label for="typescrip">Type Scrip</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="Uploadimage" style="font-weight: bold;">Upload Image</label>
+                        <input type="file" name="uploadimage" id="uploadimage">
+                    </div>
+
+                    <div>
+                        <button type="button" id="submit" onclick="submitProject(event)">Submit</button>
+                    </div>
+                </form>
+
+                <div style="background-color: white; padding: 20px; text-align: left; min-height: 400px;">
+                    <h1 style="margin-bottom: 20px;">My Projects</h1>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px" id="projects">
+                        
+                    </div>
+                </div>
+        </div>
+        <div id="detailApp" style="padding: 40px; display: none;">
+            <button onclick="closeDetail()" style="margin: 0">Close</button>
+            <h1 id="project-title">a</h1>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-bottom: 40px;">
+                <img id="detailImage" src="" alt="" style="width: 100%;" />
+                <div>
+                    <div>
+                        <h3 style="margin: 0;">Duration</h3>
+                        <p style="margin: 0" id="detailDates">a</p>
+                        <p style="margin: 0" id="detailDuration">a</p>
+                    </div>
+                    <div>
+                        <h3 style="margin: 0;">Technologies</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr;" id="detailStacks">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="detailDescription"></div>
+        </div>
+
+        <script src="myproject.js"></script>
+    </body>
+</html>
